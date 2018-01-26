@@ -9,6 +9,9 @@ public class InfectionStatus : MonoBehaviour
     [SerializeField]
     int initialInfectionLevel = 0;
 
+    [SerializeField]
+    int deathLevel;
+
     [Header("State")]
 
     [ReadOnly]
@@ -18,5 +21,14 @@ public class InfectionStatus : MonoBehaviour
     private void Start()
     {
         infectionLevel = initialInfectionLevel;
+    }
+
+    public void IncreaseInfectionLevel(int amount)
+    {
+        infectionLevel = infectionLevel + amount;
+        if(infectionLevel >= deathLevel)
+        {
+            Debug.Log("*dark souls voice* u died");
+        }
     }
 }
