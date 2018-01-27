@@ -108,6 +108,66 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &221864720 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100020, guid: 13a3bac46c6243b44848aad53478103f, type: 3}
+  m_PrefabInternal: {fileID: 496004514}
+--- !u!64 &221864724
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 221864720}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300018, guid: 13a3bac46c6243b44848aad53478103f, type: 3}
+--- !u!1001 &496004514
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400008, guid: 13a3bac46c6243b44848aad53478103f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 13a3bac46c6243b44848aad53478103f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 13a3bac46c6243b44848aad53478103f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 13a3bac46c6243b44848aad53478103f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 13a3bac46c6243b44848aad53478103f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 13a3bac46c6243b44848aad53478103f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 13a3bac46c6243b44848aad53478103f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 13a3bac46c6243b44848aad53478103f, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 13a3bac46c6243b44848aad53478103f, type: 3}
+  m_IsPrefabParent: 0
 --- !u!1 &744413012
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,7 +185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &744413013
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -407,6 +467,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9927620065cdf64fbb84b5889dddbc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  infectionAmount: 5
+  infectionTick: 0.5
 --- !u!1 &2081057784 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 2}
@@ -423,5 +485,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialInfectionLevel: 0
-  deathLevel: 0
+  deathLevel: 100
+  infectionChangeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: InfectionChangeEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
   infectionLevel: 0
