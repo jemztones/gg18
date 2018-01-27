@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: 149ffefbe095beb47bcf0652947ba6ed
+timeCreated: 1517036815
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature.001
+    100004: Bone
+    100006: Bone 1
+    100008: Bone.001
+    100010: Bone.001 1
+    100012: Bone.002
+    100014: Bone.002 1
+    100016: Bone.003
+    100018: Bone.003 1
+    100020: Bone.004
+    100022: Bone.004 1
+    100024: Bone.005
+    100026: Bone.005 1
+    100028: Bone.006
+    100030: Bone.006 1
+    100032: Bone.007
+    100034: Bone.007 1
+    100036: Bone.008
+    100038: Bone.008 1
+    100040: Bone.008_end
+    100042: Bone.008_end 1
+    100044: Plane
+    100046: Plane.001
+    100048: Plane.002
+    100050: Plane.005
+    100052: Plane.008
+    100054: Plane.009
+    100056: Plane.011
+    100058: Pump.000
+    100060: Pump.001
+    100062: PumpHose
+    100064: PumpHose.001
+    100066: PumpsRoof
+    100068: //RootNode
+    100070: Sign
+    100072: Station
+    400000: Armature
+    400002: Armature.001
+    400004: Bone
+    400006: Bone 1
+    400008: Bone.001
+    400010: Bone.001 1
+    400012: Bone.002
+    400014: Bone.002 1
+    400016: Bone.003
+    400018: Bone.003 1
+    400020: Bone.004
+    400022: Bone.004 1
+    400024: Bone.005
+    400026: Bone.005 1
+    400028: Bone.006
+    400030: Bone.006 1
+    400032: Bone.007
+    400034: Bone.007 1
+    400036: Bone.008
+    400038: Bone.008 1
+    400040: Bone.008_end
+    400042: Bone.008_end 1
+    400044: Plane
+    400046: Plane.001
+    400048: Plane.002
+    400050: Plane.005
+    400052: Plane.008
+    400054: Plane.009
+    400056: Plane.011
+    400058: Pump.000
+    400060: Pump.001
+    400062: PumpHose
+    400064: PumpHose.001
+    400066: PumpsRoof
+    400068: //RootNode
+    400070: Sign
+    400072: Station
+    2100000: WhiteMetal
+    2100002: Pumps
+    2100004: metal
+    2100006: red
+    2100008: white
+    2100010: black
+    2100012: grey
+    2100014: RedMetal
+    2100016: light
+    2100018: No Name
+    2100020: Asphalt
+    2100022: Material.002
+    2300000: Plane
+    2300002: Plane.001
+    2300004: Plane.002
+    2300006: Plane.005
+    2300008: Plane.008
+    2300010: Plane.009
+    2300012: Plane.011
+    2300014: Pump.000
+    2300016: Pump.001
+    2300018: PumpsRoof
+    2300020: Sign
+    2300022: Station
+    2300024: //RootNode
+    3300000: Plane
+    3300002: Plane.001
+    3300004: Plane.002
+    3300006: Plane.005
+    3300008: Plane.008
+    3300010: Plane.009
+    3300012: Plane.011
+    3300014: Pump.000
+    3300016: Pump.001
+    3300018: PumpsRoof
+    3300020: Sign
+    3300022: Station
+    3300024: //RootNode
+    4300000: Plane
+    4300002: PumpHose.001
+    4300004: PumpHose
+    4300006: Plane.011
+    4300008: Plane.009
+    4300010: Plane.008
+    4300012: PumpsRoof
+    4300014: Sign
+    4300016: Plane.005
+    4300018: Station
+    4300020: Pump.001
+    4300022: Plane.002
+    4300024: Plane.001
+    4300026: Pump.000
+    7400000: Default Take
+    9500000: //RootNode
+    13700000: PumpHose
+    13700002: PumpHose.001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
