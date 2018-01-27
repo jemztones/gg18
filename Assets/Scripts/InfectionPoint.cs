@@ -15,9 +15,16 @@ public class InfectionPoint : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("i'm being infected");
-		infectionStatus = other.gameObject.GetComponent<InfectionStatus> ();
-		infectionCoroutine = StartCoroutine (InfectionTouchRoutine());
+		infectionStatus = other.gameObject.GetComponentInChildren<InfectionStatus> ();
+        if (infectionStatus)
+        {
+            Debug.Log("i'm being infected");
+            infectionCoroutine = StartCoroutine(InfectionTouchRoutine());
+        }
+        else
+        {
+            Debug.Log("no infection status on touching object " + other.gameObject.name);
+        }
     }
 
 	void OnTriggerExit()
