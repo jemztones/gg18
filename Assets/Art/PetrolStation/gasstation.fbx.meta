@@ -27,6 +27,37 @@ ModelImporter:
     100038: Circle_012
     100040: Plane_006
     100042: Plane_007
+    100044: Armature
+    100046: Armature_001
+    100048: Bone
+    100050: Bone_0
+    100052: Bone_001
+    100054: Bone_002
+    100056: Bone_003
+    100058: Bone_004
+    100060: Bone_005
+    100062: Bone_006
+    100064: Bone_007
+    100066: Bone_008
+    100068: Bone_2
+    100070: Bone_3
+    100072: Bone_4
+    100074: Bone_5
+    100076: Bone_6
+    100078: Bone_7
+    100080: Bone_8
+    100082: Bone_9
+    100084: Plane_010
+    100086: Plane_011
+    100088: Plane_012
+    100090: Plane_013
+    100092: Pump_000
+    100094: Pump_001
+    100096: PumpHose
+    100098: PumpHose_001
+    100100: PumpsRoof
+    100102: Sign
+    100104: Station
     400000: Circle
     400002: Circle_001
     400004: Circle_002
@@ -49,6 +80,37 @@ ModelImporter:
     400038: Circle_012
     400040: Plane_006
     400042: Plane_007
+    400044: Armature
+    400046: Armature_001
+    400048: Bone
+    400050: Bone_0
+    400052: Bone_001
+    400054: Bone_002
+    400056: Bone_003
+    400058: Bone_004
+    400060: Bone_005
+    400062: Bone_006
+    400064: Bone_007
+    400066: Bone_008
+    400068: Bone_2
+    400070: Bone_3
+    400072: Bone_4
+    400074: Bone_5
+    400076: Bone_6
+    400078: Bone_7
+    400080: Bone_8
+    400082: Bone_9
+    400084: Plane_010
+    400086: Plane_011
+    400088: Plane_012
+    400090: Plane_013
+    400092: Pump_000
+    400094: Pump_001
+    400096: PumpHose
+    400098: PumpHose_001
+    400100: PumpsRoof
+    400102: Sign
+    400104: Station
     2100000: unnamed
     2100002: Material_002
     2100004: light
@@ -75,6 +137,13 @@ ModelImporter:
     2300036: Circle_012
     2300038: Plane_006
     2300040: Plane_007
+    2300042: Plane_010
+    2300044: Plane_011
+    2300046: Pump_000
+    2300048: Pump_001
+    2300050: PumpsRoof
+    2300052: Sign
+    2300054: Station
     3300000: Circle
     3300002: Circle_001
     3300004: Circle_002
@@ -96,6 +165,13 @@ ModelImporter:
     3300036: Circle_012
     3300038: Plane_006
     3300040: Plane_007
+    3300042: Plane_010
+    3300044: Plane_011
+    3300046: Pump_000
+    3300048: Pump_001
+    3300050: PumpsRoof
+    3300052: Sign
+    3300054: Station
     4300000: Plane_004
     4300002: Circle_003
     4300004: Circle_002
@@ -117,9 +193,59 @@ ModelImporter:
     4300036: Circle_006
     4300038: Circle_004
     4300040: Plane_006
+    4300042: Plane_013
+    4300044: Plane_012
+    4300046: Plane_011
+    4300048: Plane_010
+    4300050: PumpHose_001
+    4300052: PumpHose
+    4300054: PumpsRoof
+    4300056: Sign
+    4300058: Station
+    4300060: Pump_001
+    4300062: Pump_000
     7400000: Default Take
     9500000: //RootNode
-  externalObjects: {}
+    13700000: Plane_012
+    13700002: Plane_013
+    13700004: PumpHose
+    13700006: PumpHose_001
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_001
+    second: {fileID: 2100000, guid: 8f97f8750179c844b97f7061cbb0c5e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_002
+    second: {fileID: 2100000, guid: f6ee1b8ed7368f7438d18cb354396608, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Pumps
+    second: {fileID: 2100000, guid: 38a1d0ce68202ff499bee480377e4478, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RedMetal
+    second: {fileID: 2100000, guid: c7004400455a2604085f3fba0cc0cbe5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WhiteMetal
+    second: {fileID: 2100000, guid: 089b5df952e5ade4a84c2e265530cdb5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: light
+    second: {fileID: 2100000, guid: b0e239aeb60f1a04a93ec866aa72bf6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: unnamed
+    second: {fileID: 2100000, guid: b33a222ce47c31f4587afb74fa12e57e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -157,7 +283,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
