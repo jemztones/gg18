@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class InfectionStatus : MonoBehaviour
 {
@@ -11,6 +10,8 @@ public class InfectionStatus : MonoBehaviour
 
     [SerializeField]
     int deathLevel;
+
+	public InfectionChangeEvent infectionChangeEvent;
 
     [Header("State")]
 
@@ -26,9 +27,15 @@ public class InfectionStatus : MonoBehaviour
     public void IncreaseInfectionLevel(int amount)
     {
         infectionLevel = infectionLevel + amount;
+		infectionChangeEvent.Invoke (infectionLevel);
         if(infectionLevel >= deathLevel)
         {
             Debug.Log("*dark souls voice* u died");
         }
     }
+}
+
+[System.Serializable]
+public class InfectionChangeEvent : UnityEvent<int>
+{
 }
