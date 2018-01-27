@@ -33,5 +33,5 @@ sysinfo.txt
 *.apk
 *.unitypackage
 
-/SteamVR/
-/VRTK/
+SteamVR*
+VRTK*
