@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using VRTK;
 
 public class Ear : VRTK_InteractableObject
@@ -6,17 +7,16 @@ public class Ear : VRTK_InteractableObject
 	[Header("Ear")]
 
 	[ReadOnly]
-	[SerializeField]
-	bool covered = false;
+	public bool covered = false;
 
-	[SerializeField]
-	AudioListener listener;
+	public UnityEvent coveredEvent;
+	public UnityEvent uncoveredEvent;
 
 	public override void StartTouching(VRTK_InteractTouch currentTouchingObject = null)
 	{
 		Debug.Log ("covered ear");
 		covered = true;
-		listener.enabled = false;
+		coveredEvent.Invoke ();
 		base.StartTouching(currentTouchingObject);
 	}
 
@@ -24,7 +24,7 @@ public class Ear : VRTK_InteractableObject
 	{
 		Debug.Log ("uncovered ear");
 		covered = false;
-		listener.enabled = true;
+		uncoveredEvent.Invoke ();
 		base.StopTouching(previousTouchingObject);
 	}
 }
