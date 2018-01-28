@@ -7,10 +7,10 @@ public class HearingManager : MonoBehaviour
 	Ear[] ears;
 
 	[SerializeField]
-	MixerExposedParameter muffleMixerParameter;
+	List<MixerParamValuePair> muffleMixerParameters;
 
 	[SerializeField]
-	float muffleValue;
+	AudioSource heartbeatSource;
 
 	void Start()
 	{
@@ -37,18 +37,31 @@ public class HearingManager : MonoBehaviour
 		if (allCovered)
 		{
 			Debug.Log ("All ears covered!");
-			muffleMixerParameter.audioMixer.SetFloat (muffleMixerParameter.mixerVariableName, muffleValue);
+			heartbeatSource.Play ();
+			foreach (MixerParamValuePair paramPair in muffleMixerParameters)
+			{
+				paramPair.exposedParameter.audioMixer.SetFloat (paramPair.exposedParameter.mixerVariableName, paramPair.value);
+			}
 		}
 		else
 		{
 			Debug.Log ("Not all ears covered!");
-			muffleMixerParameter.audioMixer.ClearFloat (muffleMixerParameter.mixerVariableName);
+			ResetMixerParams ();
 		}
 	}
 
 	private void EarUncovered()
 	{
 		Debug.Log ("Ear no longer covered, re-enabling audio");
-		muffleMixerParameter.audioMixer.ClearFloat (muffleMixerParameter.mixerVariableName);
+		ResetMixerParams ();
+	}
+
+	private void ResetMixerParams()
+	{
+		heartbeatSource.Stop ();
+		foreach(MixerParamValuePair paramPair in muffleMixerParameters)
+		{
+			paramPair.exposedParameter.audioMixer.ClearFloat (paramPair.exposedParameter.mixerVariableName);
+		}
 	}
 }

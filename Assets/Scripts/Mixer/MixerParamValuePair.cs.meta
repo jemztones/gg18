@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a2e305f6cef9143f5be5b4534f2dfc46
+timeCreated: 1451702281
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - audioMixer: {fileID: 24100000, guid: 3e3470b774119413293f055e39dd30ae, type: 2}
+  - relatedObject: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
