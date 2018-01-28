@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33281981580274360}
   - component: {fileID: 135613683650249712}
   - component: {fileID: 23728283965495216}
+  - component: {fileID: 114260168732804846}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -40,7 +41,7 @@ GameObject:
   - component: {fileID: 108152903313465556}
   - component: {fileID: 95340399362826322}
   - component: {fileID: 82691530633233544}
-  - component: {fileID: 114211147750737934}
+  - component: {fileID: 114837351254628332}
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1621832747696808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.5, y: 20.3, z: -18.49}
+  m_LocalPosition: {x: -25, y: 11.8, z: -25.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4795024618921756}
@@ -122,8 +123,9 @@ AudioSource:
   m_GameObject: {fileID: 1621832747696808}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7e100a43d543e3442be9bf913d769525, type: 3}
+  OutputAudioMixerGroup: {fileID: 243138171065441282, guid: 0f674e093947a134492aa98b2c3af326,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: d0f81d7aef23ae6429ee71a24ad5d409, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -132,7 +134,7 @@ AudioSource:
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 11
-  DopplerLevel: 1
+  DopplerLevel: 0.35
   MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
@@ -175,7 +177,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 2
       time: 0
-      value: 0
+      value: 0.44166666
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -221,18 +223,18 @@ Light:
   serializedVersion: 8
   m_Type: 2
   m_Color: {r: 0.9632353, g: 0.86192954, b: 0.53119594, a: 1}
-  m_Intensity: 18
+  m_Intensity: 10.7
   m_Range: 22.85154
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
-    m_Resolution: -1
+    m_Resolution: 3
     m_CustomResolution: -1
     m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
+    m_Bias: 0.49
+    m_NormalBias: 0.38
+    m_NearPlane: 0.1
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
@@ -261,7 +263,22 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114211147750737934
+--- !u!114 &114260168732804846
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1194859722780736}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b1178439bf256f4bafae110ed5d88e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewCamera: {fileID: 0}
+  postProcBehaviour: {fileID: 0}
+  edgeOfScreenAdjustment: 0
+  slitscan: {fileID: 0}
+--- !u!114 &114837351254628332
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -269,12 +286,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1621832747696808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae8ce07cb976574db4bd3d171a6cc7c, type: 3}
+  m_Script: {fileID: 11500000, guid: d5b2ab2f92df3ae4c9bd1ff68fb11022, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalSpeed: 0.05
-  verticalSpeed: 1
-  amplitude: 2
+  speed: 0
+  width: 0
+  height: 0
 --- !u!135 &135613683650249712
 SphereCollider:
   m_ObjectHideFlags: 1

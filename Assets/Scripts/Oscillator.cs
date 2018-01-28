@@ -14,8 +14,8 @@ public class Oscillator : MonoBehaviour {
 	void Start () {
 		startPos = transform.position;
 		speed = 1;
-		width = 60;
-		height = 5;
+		width = 40;
+		height = 10;
 	}
 	
 	// Update is called once per frame
