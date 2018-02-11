@@ -1,4 +1,4 @@
-﻿using Kino;
+﻿//using Kino;
 using UnityEngine;
 using UnityEngine.PostProcessing;
 
@@ -13,8 +13,8 @@ public class InfectedVision : MonoBehaviour
 	[SerializeField]
 	float edgeOfScreenAdjustment;
 
-	[SerializeField]
-	Slitscan slitscan;
+	//[SerializeField]
+	//Slitscan slitscan;
 
 	float minVal;
 	float maxVal;
@@ -73,12 +73,12 @@ public class InfectedVision : MonoBehaviour
 
 		if (visible)
 		{
-			slitscan.enabled = true;
+			//slitscan.enabled = true;
 			//postProcBehaviour.enabled = true;
 		}
 		else
 		{
-			slitscan.enabled = false;
+			//slitscan.enabled = false;
 			//postProcBehaviour.enabled = false;
 		}
 	}
