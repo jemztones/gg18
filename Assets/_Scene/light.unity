@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.0017260744, g: 0.0012079956, b: 0.00033581117, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1957,20 +1957,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile: {fileID: 11400000, guid: 67200a9154ba7334c88f3677729219ab, type: 2}
---- !u!114 &236176077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 236176073}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97ab43805f89702488f7ab1de382cd05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sliceCount: 128
-  _mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
-  _shader: {fileID: 4800000, guid: 8b3f314a534e9b34da06266d263c34e6, type: 3}
 --- !u!1 &238787175
 GameObject:
   m_ObjectHideFlags: 0
@@ -4422,7 +4408,6 @@ MonoBehaviour:
     m_TypeName: InfectionChangeEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   infectionLevel: 0
-  profile: {fileID: 0}
 --- !u!1 &468511972
 GameObject:
   m_ObjectHideFlags: 0
@@ -11284,6 +11269,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 089b5df952e5ade4a84c2e265530cdb5, type: 2}
+    - target: {fileID: 1828347497264518, guid: d16fd6a686e061b499678a58b0b71256, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d16fd6a686e061b499678a58b0b71256, type: 2}
   m_IsPrefabParent: 0
@@ -12099,7 +12088,6 @@ MonoBehaviour:
     m_TypeName: InfectionChangeEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   infectionLevel: 0
-  profile: {fileID: 0}
 --- !u!1 &1313230558
 GameObject:
   m_ObjectHideFlags: 0
@@ -12800,20 +12788,6 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: f27b3fd2e6b194b9b964e097240e5f2c, type: 2}
   m_PrefabInternal: {fileID: 314082584}
---- !u!114 &1387930547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1387930546}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97ab43805f89702488f7ab1de382cd05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sliceCount: 72
-  _mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
-  _shader: {fileID: 4800000, guid: 8b3f314a534e9b34da06266d263c34e6, type: 3}
 --- !u!20 &1387930553 stripped
 Camera:
   m_PrefabParentObject: {fileID: 2000000, guid: f27b3fd2e6b194b9b964e097240e5f2c,
@@ -20514,7 +20488,7 @@ Prefab:
         type: 2}
       propertyPath: slitscan
       value: 
-      objectReference: {fileID: 1387930547}
+      objectReference: {fileID: 0}
     - target: {fileID: 1621832747696808, guid: ab2e71a51f9dea24ca132a60916ec7b3, type: 2}
       propertyPath: m_Name
       value: LightSource
